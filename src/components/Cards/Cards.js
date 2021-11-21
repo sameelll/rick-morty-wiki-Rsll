@@ -4,7 +4,6 @@ import styles from './Cards.module.scss';
 const Cards = ({ results }) => {
 
     let display;
-    console.log(results)
     results ? 
         display = results.map(card => {
             const { id, 

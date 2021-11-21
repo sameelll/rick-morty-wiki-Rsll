@@ -50,7 +50,8 @@ function App() {
 
       <Pagination 
         setPageNumber={setPageNumber}
-        pageNumber={pageNumber} />
+        pageNumber={pageNumber}
+        info={info} />
     </div>
   );
 }
