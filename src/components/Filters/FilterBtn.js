@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FilterBtn = ({ name, index, items }) => {
+const FilterBtn = ({ name, index, items, task, setPageNumber }) => {
     return (
         <div>
             <style jsx>
@@ -14,9 +14,12 @@ const FilterBtn = ({ name, index, items }) => {
                     }
                 `}
             </style>
-
             <div className="form-check">
                 <input
+                    onClick={() => {
+                        setPageNumber(1);
+                        task(items); // it's called "task" bc it does the same task for every filter component
+                    }}
                     className="form-check-input x" type="radio"
                     name={name}
                     id={`${name}-${index}`} />
