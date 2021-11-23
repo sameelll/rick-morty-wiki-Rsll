@@ -33,9 +33,10 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav fs-5">
                         <li className="nav-item">
-                            <NavLink                     
+                            <NavLink
+                                activeClassName="active"         
                                 to="/" 
-                                className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
+                                className="nav-link">
                                 Characters
                             </NavLink>
                         </li>
