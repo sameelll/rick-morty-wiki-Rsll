@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Cards.module.scss';
 
-const Cards = ({ results }) => {
+const Cards = ({ results, page }) => {
 
     let display;
     results ? 
@@ -12,7 +13,9 @@ const Cards = ({ results }) => {
                     location, 
                     status } = card;
             return (
-                <div key={id}className="col-4 position-relative mb-4">
+                <Link 
+                    style={{textDecoration: "none"}}
+                    to={`${page}${id}`} key={id}className="col-4 position-relative mb-4 text-dark">
                     <div className={`${styles.cards}`}>
                         <img src={image} alt="" className={`${styles.img} img-fluid`} />
                         <div className="content" style={{padding: "10px"}}>
@@ -39,7 +42,7 @@ const Cards = ({ results }) => {
                             )
                         }
                     })()}                   
-                </div>
+                </Link>
             );
         }) 
         :

@@ -31,7 +31,8 @@ const Home = () => {  // Home page which was in the App.js
     }, [api])
   
     return (
-      <div className="App">    
+      <div className="App">
+        <h1 className="text-center mb-4">Characters</h1>    
         <Search 
           setPageNumber={setPageNumber} 
           setSearch={setSearch} />
@@ -44,7 +45,8 @@ const Home = () => {  // Home page which was in the App.js
               setSpecies={setSpecies} />          
             <div className="col-8">
               <div className="row">
-                <Cards 
+                <Cards
+                  page="/" 
                   results={results} />
               </div>
             </div>
