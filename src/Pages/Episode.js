@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Episode = () => {
+const Episodes = () => {
     return (
         <div>
             The episodes are here
@@ -8,4 +8,4 @@ const Episode = () => {
     )
 }
 
-export default Episode
+export default Episodes
