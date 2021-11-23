@@ -10,6 +10,7 @@ import Home from './Pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 
+// Navbar component
 import Navbar from './components/Navbar/Navbar';
 
 function App(){

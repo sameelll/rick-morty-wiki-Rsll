@@ -1,12 +1,13 @@
 // React Hooks
 import React, { useState, useEffect } from 'react';
+
 // Components
 import Cards from '../components/Cards/Cards';
 import Filters from '../components/Filters/Filters';
 import Pagination from '../components/Pagination/Pagination';
 import Search from '../components/Search/Search';
 
-const Home = () => { // Home page which was in the App.js
+const Home = () => {  // Home page which was in the App.js
     // States
     const [pageNumber, setPageNumber] = useState(1);
     const [search, setSearch] = useState("");
