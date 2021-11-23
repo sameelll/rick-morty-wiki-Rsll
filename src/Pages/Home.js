@@ -43,7 +43,7 @@ const Home = () => {  // Home page which was in the App.js
               setGender={setGender}
               setPageNumber={setPageNumber}
               setSpecies={setSpecies} />          
-            <div className="col-8">
+            <div className="col-lg-8 col-12">
               <div className="row">
                 <Cards
                   page="/" 

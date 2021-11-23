@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Pages 
-import Episodes from './Pages/Episode';
+import Episodes from './Pages/Episodes';
 import Location from './Pages/Location';
 import Home from './Pages/Home';
 

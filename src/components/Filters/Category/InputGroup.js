@@ -2,12 +2,12 @@ import React from 'react'
 
 const InputGroup = ({ total, name, setId }) => {
     return (
-        <div class="input-group mb-3">
+        <div Classname="input-group mb-3">
             <select
                 onChange={e => {
                     setId(e.target.value)
                 }} 
-                class="form-select" 
+                Classname="form-select" 
                 id={name}>
                 <option value="1" selected>Choose...</option>
                 {[...Array(total).keys()].map(num => {
